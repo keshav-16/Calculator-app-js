@@ -36,24 +36,26 @@ body{
     position: relative;
     color: #6b705c;
     margin-top: 20px;
-    margin-bottom: 20px;
+    overflow-y: hidden;
     display: flex;
     flex-direction: row;
     justify-content: right;
     padding-right: 30px;
+    
 }
 .output{
     width:100%;
-    height:60px;
+    height:85px;
     font-size: 35px;
     position: relative;
     color: #6b705c;
-    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: left;
     padding-left: 20px;
+    padding-bottom: 10px;
+    overflow-y: hidden;
 }
 @media (max-width:1300px){
     .container{
@@ -104,3 +106,24 @@ body{
     color: white;
     font-size: 20px;
 }
+::-webkit-scrollbar {
+    width: 20px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #081c15; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #081c15; 
+  }

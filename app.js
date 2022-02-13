@@ -3,6 +3,7 @@ var screen = document.querySelector('.hdata');
 var output = document.querySelector('.odata');
 let outputValue = '';
 let screenValue = '';
+let x = '';
 for (item of buttons) {
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
@@ -18,8 +19,7 @@ for (item of buttons) {
             screen.innerHTML = screenValue;
         }
         else if (buttonText == '=') {
-            output.innerHTML = "=  " + eval(screenValue);
-			
+            output.innerHTML =  eval(screenValue);
         }
         else {
             screenValue += buttonText;
