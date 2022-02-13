@@ -44,7 +44,7 @@ body{
     
 }
 .output{
-    width:100%;
+    width:90%;
     height:85px;
     font-size: 35px;
     position: relative;
@@ -55,6 +55,7 @@ body{
     justify-content: left;
     padding-left: 20px;
     padding-bottom: 10px;
+    justify-self: center;
     overflow-y: hidden;
 }
 @media (max-width:1300px){
