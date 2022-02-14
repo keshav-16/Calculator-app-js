@@ -13,6 +13,11 @@ for (item of buttons) {
             screenValue += buttonText;
             screen.innerHTML = screenValue;
         }
+        else if (buttonText == '%') {
+            buttonText = "*100";
+            screenValue += buttonText;
+            screen.innerHTML += '%';
+        }
         else if (buttonText == 'C' || buttonText=="CE") {
             screenValue = "";
 			output.innerHTML = "";
